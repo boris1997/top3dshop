@@ -1,0 +1,189 @@
+.video-slider {
+  font-family: "SF Pro Display";
+  margin-top: 4.375rem;
+  margin-bottom: 6.25rem;
+  /*   &__header-wrapper {
+    width: 100%;
+  } */
+}
+
+.video-slider__wrapper {
+  height: 34.375rem;
+  background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  max-width: 90.5rem;
+  margin: auto;
+  padding: 4.25rem 0;
+}
+
+@media (max-width: 1080px) {
+  .video-slider__wrapper {
+    height: auto;
+  }
+}
+
+.video-slider__header {
+  margin: 0 auto;
+  width: 72.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1080px) {
+  .video-slider__header {
+    padding: 0 1rem;
+    width: 100%;
+  }
+}
+
+.video-slider__title {
+  font-weight: 400;
+  font-size: 2.25rem;
+}
+
+.navigation {
+  width: 4.9375rem;
+  height: 2.4375rem;
+  border: 0.0675rem solid #e5e5e5;
+  border-radius: 0.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.navigation__item {
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  /*  @include flexbox(row, center, center); */
+}
+
+.navigation__item:nth-child(1)::after {
+  position: absolute;
+  content: url("/assets/svg/icon_chevron-left.svg");
+  top: 0.55rem;
+  left: 0.7rem;
+}
+
+.navigation__item:nth-child(2)::after {
+  position: absolute;
+  content: url("/assets/svg/icon_chevron-right.svg");
+  top: 0.55rem;
+  right: 0.7rem;
+}
+
+.navigation::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0.0675rem;
+  left: 50%;
+  background-color: #e5e5e5;
+}
+
+.slider {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 72.5rem;
+}
+
+.slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  /* transform: translate(-50%); */
+}
+
+.slider__video:not(:nth-child(1)) {
+  margin-left: 4.5625rem;
+}
+
+.slider__img {
+  height: 19rem;
+}
+
+@media (max-width: 1080px) {
+  .slider {
+    width: 96%;
+    margin-top: 3rem;
+  }
+  .slider__img {
+    height: 25.5vw;
+  }
+  .slider__video:not(:nth-child(1)) {
+    margin-left: 4vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .slider__img {
+    height: 25.9vw;
+  }
+}
+
+@media (max-width: 900px) and (max-width: 750px) {
+  .slider__img {
+    height: 25.7vw;
+  }
+}
+
+@media (max-width: 900px) and (max-width: 650px) {
+  .slider__img {
+    height: 52.2vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .slider__video:not(:nth-child(1)) {
+    margin-left: 2vw;
+  }
+}
+/*# sourceMappingURL=video-slider.css.map */

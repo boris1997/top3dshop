@@ -1,0 +1,79 @@
+@import "../../vars&mixins.scss";
+
+.h-contacts {
+  background-color: $yellowColor;
+  font-weight: 600;
+  @media (max-width: 1080px) {
+    display: none;
+  }
+
+  &__wrapper {
+    height: 2rem;
+
+    @include flexbox(row, space-between, center);
+    @media (max-width: 1270px) {
+      padding: 0 1rem;
+    }
+  }
+  &__left {
+    @include flexbox(row, space-between, center);
+    width: 32.5rem;
+  }
+  &__right {
+    width: 26.56rem;
+    @include flexbox(row, space-between, center);
+  }
+  /*  &__social-medias {
+  } */
+}
+
+.social-media {
+  /*  &__item {
+    height: 1rem;
+    width: 1rem;
+  } */
+
+  width: 5.5rem;
+  @include flexbox(row, space-between, center);
+  &__link:nth-child(1) {
+    background-color: $secColor;
+    height: 0.8706rem;
+    width: 0.98rem;
+    mask: url("/assets/svg/icon_telegram.svg") no-repeat;
+    mask-position: center;
+    mask-size: contain;
+  }
+  &__link:nth-child(2) {
+    background-color: $secColor;
+    mask: url("/assets/svg/icon_skype.svg") no-repeat;
+    width: 1.1093rem;
+    height: 0.875rem;
+    mask-size: contain;
+  }
+  &__link:nth-child(3) {
+    height: 0.973rem;
+    width: 1rem;
+    background-color: $secColor;
+
+    mask: url("/assets/svg/icon_phone.svg") no-repeat;
+    mask-size: contain;
+  }
+  /*   &__item:nth-child(2) {
+    background-color: $secColor;
+    mask-image: url("/assets/svg/icon_skype.svg");
+    mask-repeat: no-repeat;
+  }
+  &__item:nth-child(3) {
+    background-color: $secColor;
+    mask-image: url("/assets/svg/icon_phone.svg");
+    mask-repeat: no-repeat;
+  } */
+}
+
+.social-media:nth-child(2) {
+  &__item {
+    background-color: $secColor;
+    mask-image: url("/assets/svg/icon_skype.svg");
+    mask-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,12 @@
+$mainColor: #ffffff;
+$secColor: #000000;
+$brownColor: #222222;
+$redColor: #D2001C;
+$yellowColor: #FED600;
+
+@mixin flexbox($direction, $content, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $align;
+}

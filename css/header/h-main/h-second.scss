@@ -1,0 +1,12 @@
+@import "../../vars&mixins.scss";
+
+
+.h-second {
+    height: 2.38rem;
+  @include flexbox(row, space-between, flex-start);
+   @media (max-width: 1080px) {
+      display: none;
+    }
+}
+
+

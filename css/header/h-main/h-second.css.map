@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,SAAS,CAAC;EACN,MAAM,EAAE,OAAO;ECGjB,OAAO,EAAE,IAAI;EACb,cAAc,EDHG,GAAG;ECIpB,eAAe,EDJO,aAAa;ECKnC,WAAW,EDL0B,UAAU;CAIhD;;AAHE,MAAM,EAAE,SAAS,EAAE,MAAM;EAH5B,AAAA,SAAS,CAAC;IAIJ,OAAO,EAAE,IAAI;GAElB",
+    "sources": [
+        "h-second.scss",
+        "../../vars&mixins.scss"
+    ],
+    "names": [],
+    "file": "h-second.css"
+}

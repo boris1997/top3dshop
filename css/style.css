@@ -1,0 +1,90 @@
+/* @import "../node_modules/sass-rem/rem";  */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 1270px) {
+  * {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 550px) {
+  * {
+    font-size: 12.5px;
+  }
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li {
+  list-style: none;
+}
+
+.page__noScroll {
+  overflow: hidden;
+}
+
+.page__header-wrapper {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 1080px) {
+  .page__header-wrapper {
+    margin-top: 0;
+  }
+}
+
+.page__sidebar {
+  height: calc(100% - 11.8rem);
+  width: 100%;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+
+.page__sidebar--active {
+  visibility: visible;
+}
+
+.header {
+  font-family: "Open Sans";
+}
+
+.header__wrapper {
+  max-width: 90rem;
+  margin: auto;
+}
+
+.header span,
+.header p,
+.header a,
+.header input {
+  font-size: 0.81rem;
+}
+
+/* max-width: 80rem;
+    margin: auto; */
+.h-content {
+  max-width: 74.5rem;
+  margin: auto;
+}
+
+@media (max-width: 1270px) {
+  .h-content {
+    max-width: 81rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

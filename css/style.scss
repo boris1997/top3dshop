@@ -1,0 +1,79 @@
+@import "./vars&mixins.scss";
+/* @import "../node_modules/sass-rem/rem";  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  @media (max-width: 1270px) {
+    font-size: 14.5px;
+  }
+  @media (max-width: 550px) {
+    font-size: 12.5px;
+  }
+}
+
+body {
+  background-color: $mainColor;
+  color: $secColor;
+}
+
+a {
+  text-decoration: none;
+  color: $secColor;
+}
+
+li {
+  list-style: none;
+}
+
+.page {
+  &__noScroll {
+    overflow: hidden;
+  }
+  &__header-wrapper {
+    margin-top: 0.75rem;
+    @media (max-width: 1080px) {
+      margin-top: 0;
+    }
+  }
+
+  &__sidebar {
+    height: calc(100% - 11.8rem);
+    width: 100%;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+  }
+
+  &__sidebar--active {
+    visibility: visible;
+  }
+}
+
+.header {
+  font-family: "Open Sans";
+  &__wrapper {
+    max-width: 90rem;
+    margin: auto;
+  }
+  span,
+  p,
+  a,
+  input {
+    font-size: 0.81rem;
+  }
+}
+/* max-width: 80rem;
+    margin: auto; */
+.h-content {
+  max-width: 74.5rem;
+  margin: auto;
+  @media (max-width: 1270px) {
+    max-width: 81rem;
+  }
+}
+
+// 1060 px hide услуги и рейтинг
+// 1024 px

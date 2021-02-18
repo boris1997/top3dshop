@@ -1,0 +1,9 @@
+@import "../vars&mixins.scss";
+
+.button {
+  color: $mainColor;
+  border-radius: 0.25rem;
+  background-color: $redColor;
+  border: none;
+  cursor: pointer;
+}

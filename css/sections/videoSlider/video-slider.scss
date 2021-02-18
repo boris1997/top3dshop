@@ -1,0 +1,126 @@
+@import "../../vars&mixins.scss";
+
+.video-slider {
+  font-family: "SF Pro Display";
+  margin-top: 4.375rem;
+  margin-bottom: 6.25rem;
+  &__wrapper {
+    height: 34.375rem;
+    background-color: #f9f9f9;
+    @include flexbox(column, space-between, space-between);
+    max-width: 90.5rem;
+    margin: auto;
+    padding: 4.25rem 0;
+    @media (max-width: 1080px) {
+      height: auto;
+    }
+  }
+
+  &__header {
+    margin: 0 auto;
+    width: 72.5rem;
+    @include flexbox(row, space-between, center);
+    @media (max-width: 1080px) {
+      padding: 0 1rem;
+      width: 100%;
+    }
+  }
+  /*   &__header-wrapper {
+    width: 100%;
+  } */
+
+  &__title {
+    font-weight: 400;
+    font-size: 2.25rem;
+  }
+}
+
+.navigation {
+  width: 4.9375rem;
+  height: 2.4375rem;
+  border: 0.0675rem solid #e5e5e5;
+  border-radius: 0.3125rem;
+  @include flexbox(row, space-between, center);
+  position: relative;
+  &__item {
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+
+    /*  @include flexbox(row, center, center); */
+  }
+  &__item:nth-child(1) {
+    &::after {
+      position: absolute;
+      content: url("/assets/svg/icon_chevron-left.svg");
+
+      top: 0.55rem;
+      left: 0.7rem;
+    }
+  }
+
+  &__item:nth-child(2) {
+    &::after {
+      position: absolute;
+      content: url("/assets/svg/icon_chevron-right.svg");
+
+      top: 0.55rem;
+      right: 0.7rem;
+    }
+  }
+  //   &__item:nth-child(1) {
+  //  /*    background-image: url("/assets/svg/icon_chevron-right.svg"); */
+  //     background-position: center;
+  //   }
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0.0675rem;
+    left: 50%;
+    background-color: #e5e5e5;
+  }
+}
+
+.slider {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 72.5rem;
+
+  &__wrapper {
+    @include flexbox(row, space-between, center);
+    transition: transform 0.5s ease-in-out;
+    /* transform: translate(-50%); */
+  }
+
+  &__video:not(:nth-child(1)) {
+    margin-left: 4.5625rem;
+  }
+  &__img {
+    height: 19rem;
+  }
+  @media (max-width: 1080px) {
+    width: 96%;
+    margin-top: 3rem;
+    &__img {
+      height: 25.5vw;
+    }
+    &__video:not(:nth-child(1)) {
+      margin-left: 4vw;
+    }
+  }
+  @media (max-width: 900px) {
+    &__img {
+      height: 25.9vw;
+      @media (max-width: 750px) {
+        height: 25.7vw;
+      }
+      @media (max-width: 650px) {
+        height: 52.2vw;
+      }
+    }
+    &__video:not(:nth-child(1)) {
+      margin-left: 2vw;
+    }
+  }
+}

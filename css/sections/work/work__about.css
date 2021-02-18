@@ -1,0 +1,94 @@
+.resume {
+  width: 20.8125rem;
+  height: 14.062rem;
+  /* @include flexbox(column, space-between, flex-start); */
+}
+
+@media (max-width: 920px) {
+  .resume {
+    width: auto;
+  }
+}
+
+.resume__title {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1.6875rem;
+  /*  @media (max-width: 920px) {
+      width: 40rem;
+    }
+    @media (max-width: 595px) {
+      width: auto;
+    } */
+}
+
+.resume__agreement {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: #c4c4c4;
+  font-weight: 500;
+  width: 17.5rem;
+  margin-top: 1.25rem;
+  letter-spacing: -0.04375rem;
+}
+
+@media (max-width: 1270px) {
+  .resume__agreement {
+    font-size: 1rem;
+  }
+}
+
+.resume__submit {
+  height: 2.75rem;
+  width: 17.5rem;
+  font-size: 1rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 410px) {
+  .resume__submit {
+    width: 100%;
+  }
+}
+
+.about-company {
+  width: 44.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.175rem;
+  letter-spacing: -0.7px;
+  text-align: justify;
+}
+
+.about-company__content:not(:nth-child(1)) {
+  margin-top: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+  .about-company {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .about-company {
+    width: auto;
+    padding: 0;
+    margin-top: 3rem;
+  }
+}
+/*# sourceMappingURL=work__about.css.map */

@@ -1,0 +1,54 @@
+.h-third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.875rem;
+  border-top: 1px solid rgba(189, 189, 189, 0.35);
+}
+
+@media (max-width: 1080px) {
+  .h-third {
+    display: none;
+  }
+}
+
+.h-third__link {
+  margin-right: 1rem;
+  position: relative;
+  font-weight: 700;
+  /* padding: 0 5px; */
+}
+
+.h-third__link:after {
+  position: absolute;
+  content: "";
+  -webkit-mask: url("/assets/svg/icon_chevron-down.svg") no-repeat;
+          mask: url("/assets/svg/icon_chevron-down.svg") no-repeat;
+  background-color: #bdbdbd;
+  width: 0.6rem;
+  height: 0.37rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  right: -0.8rem;
+  /* right: 0.2rem;
+    top: 0.2rem;
+    border: 0.125rem solid $redColor;
+    border-radius: 0.25rem;
+    width: 4.6875rem;
+    padding: 0.4rem 0.875rem;
+    color: $redColor; */
+}
+/*# sourceMappingURL=h-third.css.map */

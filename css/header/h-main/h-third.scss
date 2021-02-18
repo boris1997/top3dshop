@@ -1,0 +1,36 @@
+@import "../../vars&mixins.scss";
+
+.h-third {
+  @include flexbox(row, space-between, center);
+  height: 3.875rem;
+  border-top: 1px solid rgba(189, 189, 189, 0.35);
+  @media (max-width: 1080px) {
+    display: none;
+  }
+  &__link {
+    margin-right: 1rem;
+    position: relative;
+    font-weight: 700;
+    /* padding: 0 5px; */
+    &:after {
+      position: absolute;
+      content: "";
+      mask: url("/assets/svg/icon_chevron-down.svg") no-repeat;
+      background-color: #bdbdbd;
+      width: 0.6rem;
+      height: 0.37rem;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      mask-size: contain;
+      right: -0.8rem;
+      /* right: 0.2rem;
+    top: 0.2rem;
+    border: 0.125rem solid $redColor;
+    border-radius: 0.25rem;
+    width: 4.6875rem;
+    padding: 0.4rem 0.875rem;
+    color: $redColor; */
+    }
+  }
+}
