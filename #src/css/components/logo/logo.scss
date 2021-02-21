@@ -1,0 +1,24 @@
+@import "../../vars&mixins.scss";
+
+.logo {
+  font-style: italic;
+  width: 13.3125rem;
+  &__img {
+    height: 4.5625rem;
+    @media (max-width: 550px) {
+      height: 4rem;
+    }
+  }
+  &__link {
+    @include flexbox(row, space-between, center);
+  }
+
+  &__span {
+    color: $redColor;
+  }
+  &__title {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

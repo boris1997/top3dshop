@@ -1,0 +1,83 @@
+@import "../../vars&mixins.scss";
+
+.h-first {
+  &__desktop {
+    height: 6.625rem;
+    @include flexbox(row, space-between, center);
+    @media (max-width: 1080px) {
+      display: none;
+    }
+  }
+
+  &__searcher-input {
+    width: 32.5625rem;
+    height: 2.75rem;
+  }
+
+  &__login,
+  &__cart {
+    position: relative;
+  }
+
+  /*   &__contacts {
+  } */
+}
+
+.reviews {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.16);
+  /* &__wrapper {
+  } */
+  &__link {
+    width: 6.5625rem;
+    height: 3.75rem;
+    @include flexbox(row, space-between, center);
+  }
+  &__img {
+    margin: auto;
+    height: 3.125rem;
+  }
+}
+
+.input {
+  &__box {
+  }
+
+  &__search {
+    border-radius: 0.25rem;
+    outline: none;
+    padding-left: 1rem;
+    border: 0.0625rem solid #bdbdbd;
+    border-radius: 0.25rem;
+    &::placeholder {
+      color: #9e9e9e;
+      font-family: "Open Sans";
+      font-weight: 600;
+    }
+  }
+}
+
+.cart {
+  &__link {
+    width: 10rem;
+    height: 2rem;
+    font-weight: 600;
+    padding: 0 1rem;
+
+    color: $mainColor;
+    @include flexbox(row, flex-end, center);
+    &:before {
+      position: absolute;
+      content: "";
+      height: 1.5rem;
+      left: 1rem;
+      width: 1.5rem;
+      background-color: $mainColor;
+      mask: url("/assets/svg/icon_cart.svg") no-repeat;
+      mask-size: contain;
+    }
+  }
+  &__title {
+    line-height: 1.375rem;
+  }
+}

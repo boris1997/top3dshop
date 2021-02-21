@@ -1,0 +1,55 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Regular.woff2');
+    /* IE9 Compat Modes */
+    src: local('SF Pro Display'),
+        url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Regular.woff') format('woff'),
+
+        /* Modern Browsers */
+        url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Medium.woff2');
+  /* IE9 Compat Modes */
+  src: local('SF Pro Display'),
+  url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+  /* IE6-IE8 */
+  url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Medium.woff2') format('woff2'),
+  /* Super Modern Browsers */
+  url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Medium.woff') format('woff'),
+  /* Modern Browsers */
+  url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Medium.ttf') format('truetype'),
+  /* Safari, Android, iOS */
+}
+
+/* open-sans-italic - latin */
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Bold.woff2');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Bold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Bold.woff') format('woff'),
+        /* Modern Browsers */
+        url('../SFProDisplay/SFProDisplayTypes/SFProDisplay-Bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+

@@ -1,0 +1,25 @@
+@import "../../vars&mixins.scss";
+.searcher {
+  font-weight: 600;
+  &__form {
+    position: relative;
+  }
+
+  &__submit {
+    position: absolute;
+    right: 0.2rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 0.125rem solid $redColor;
+    border-radius: 0.25rem;
+    height: 2.25rem;
+    width: 4.6875rem;
+    padding: 0.4rem 0.875rem;
+    color: $redColor;
+    @media (max-width: 400px) {
+      width: 4rem;
+      padding: 0.4rem 0.6rem;
+    }
+  }
+}

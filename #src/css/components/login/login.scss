@@ -1,0 +1,23 @@
+@import "../../vars&mixins.scss";
+
+.login {
+  &__link {
+    width: 4.5625rem;
+    color: $brownColor;
+    font-weight: 600;
+    @include flexbox(row, flex-end, center);
+    &:before {
+      position: absolute;
+      content: "";
+      height: 1.5rem;
+      left: 0;
+      width: 1.5rem;
+      background-color: $redColor;
+      mask-size: contain !important;
+      mask-position: center;
+      mask: url("/assets/svg/icon_login.svg") no-repeat;
+    }
+  }
+  /*  &__link {
+  } */
+}

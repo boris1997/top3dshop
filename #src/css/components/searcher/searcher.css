@@ -1,0 +1,29 @@
+.searcher {
+  font-weight: 600;
+}
+
+.searcher__form {
+  position: relative;
+}
+
+.searcher__submit {
+  position: absolute;
+  right: 0.2rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 0.125rem solid #D2001C;
+  border-radius: 0.25rem;
+  height: 2.25rem;
+  width: 4.6875rem;
+  padding: 0.4rem 0.875rem;
+  color: #D2001C;
+}
+
+@media (max-width: 400px) {
+  .searcher__submit {
+    width: 4rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+/*# sourceMappingURL=searcher.css.map */

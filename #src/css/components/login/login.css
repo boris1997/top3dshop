@@ -1,0 +1,39 @@
+.login {
+  /*  &__link {
+  } */
+}
+
+.login__link {
+  width: 4.5625rem;
+  color: #222222;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login__link:before {
+  position: absolute;
+  content: "";
+  height: 1.5rem;
+  left: 0;
+  width: 1.5rem;
+  background-color: #D2001C;
+  -webkit-mask-size: contain !important;
+          mask-size: contain !important;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask: url("/assets/svg/icon_login.svg") no-repeat;
+          mask: url("/assets/svg/icon_login.svg") no-repeat;
+}
+/*# sourceMappingURL=login.css.map */
